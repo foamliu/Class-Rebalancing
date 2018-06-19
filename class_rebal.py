@@ -33,7 +33,7 @@ for i in range(1111):
         # print('t[{}, {}]: {}'.format(i, j, t[i, j]))
         # print('p[{}, {}]: {}'.format(i, j, p[i, j]))
         delta = -w[j] * t[i, j] * log(p[i, j])
-        print('delta: ' + str(delta))
+        # print('delta: ' + str(delta))
         loss += delta
 
 print('loss: ' + str(loss))

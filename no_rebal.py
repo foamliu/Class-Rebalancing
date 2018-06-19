@@ -18,7 +18,7 @@ for i in range(111, 111 + 1000):
 
 p = np.clip(p, epsilon, 1.0)
 for i in range(1111):
-    p[i, 3] = 1.0
+    p[i, 0] = 1.0
 
 
 loss = 0
@@ -28,7 +28,7 @@ for i in range(1111):
         # print('t[{}, {}]: {}'.format(i, j, t[i, j]))
         # print('p[{}, {}]: {}'.format(i, j, p[i, j]))
         delta = -t[i, j] * log(p[i, j])
-        print('delta: ' + str(delta))
+        # print('delta: ' + str(delta))
         loss += delta
 
 print('loss: ' + str(loss))
