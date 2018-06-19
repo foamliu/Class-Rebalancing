@@ -14,7 +14,7 @@
 
 使用交叉熵作为损失函数:
 
-```math_def
+```math
 \sum_{i} t_i*log(p_i)
 ```
 
